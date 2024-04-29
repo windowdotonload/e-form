@@ -1,0 +1,28 @@
+{
+  "name": "e-form",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "vue": "^3.4.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "cz-git": "^1.9.1",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.17.5",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
