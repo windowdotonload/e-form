@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "commit": "git-cz"
+    "lint-prettier": "pnpm exec prettier . --write",
+    "commit": "pnpm run lint-prettier && git add . && git-cz"
   },
   "dependencies": {
     "vue": "^3.4.25"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "cz-git": "^1.9.1",
+    "prettier": "3.2.5",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.0",
