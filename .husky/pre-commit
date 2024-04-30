@@ -1,2 +1,2 @@
-#! 打印文本
-npx lint-staged
+npx lint-staged 
+echo "Prettier & ESLint check completed."
