@@ -1,2 +1,2 @@
 npx lint-staged 
-echo "Prettier & ESLint check completed."
+echo "\033[32mCheck completed.\033[0m"
