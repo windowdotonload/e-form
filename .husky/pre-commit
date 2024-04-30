@@ -1,2 +1,2 @@
 #! 打印文本
-echo "Hello World!"
+npx lint-staged

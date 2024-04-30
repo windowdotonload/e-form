@@ -8,7 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint-prettier": "pnpm exec prettier . --write",
-    "commit": "pnpm run lint-prettier && git add . && git-cz",
+    "commit": "git add . && git-cz",
     "prepare": "husky"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "eslint-plugin-vue": "^9.25.0",
     "globals": "^15.1.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.8.0",
