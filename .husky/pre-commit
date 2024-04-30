@@ -1,0 +1,2 @@
+#! 打印文本
+echo "Hello World!"
