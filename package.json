@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint-prettier": "pnpm exec prettier . --write",
     "commit": "git add . && git-cz",
     "prepare": "husky"
   },
