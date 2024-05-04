@@ -1,3 +1,7 @@
 {
-  "*": ["pnpm exec prettier . --write", "npx eslint . --fix", "npx eslint ."]
+  "packages/**": [
+    "pnpm exec prettier . --write",
+    "npx eslint . --fix",
+    "npx eslint ."
+  ]
 }
