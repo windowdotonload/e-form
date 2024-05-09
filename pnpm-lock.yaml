@@ -4,54 +4,62 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  vue:
-    specifier: ^3.4.25
-    version: 3.4.25(typescript@5.4.5)
+importers:
+  .:
+    dependencies:
+      '@e-form/form-generator':
+        specifier: workspace:^
+        version: link:form-generator
+      vue:
+        specifier: ^3.4.25
+        version: 3.4.25(typescript@5.4.5)
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.1.1
+        version: 9.1.1
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.10)(vue@3.4.25)
+      cz-git:
+        specifier: ^1.9.1
+        version: 1.9.1
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      eslint-plugin-vue:
+        specifier: ^9.25.0
+        version: 9.25.0(eslint@8.57.0)
+      globals:
+        specifier: ^15.1.0
+        version: 15.1.0
+      husky:
+        specifier: ^9.0.11
+        version: 9.0.11
+      lint-staged:
+        specifier: ^15.2.2
+        version: 15.2.2
+      prettier:
+        specifier: 3.2.5
+        version: 3.2.5
+      typescript:
+        specifier: ^5.2.2
+        version: 5.4.5
+      typescript-eslint:
+        specifier: ^7.8.0
+        version: 7.8.0(eslint@8.57.0)(typescript@5.4.5)
+      unplugin-auto-import:
+        specifier: ^0.17.5
+        version: 0.17.5
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.10
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.14(typescript@5.4.5)
 
-devDependencies:
-  '@eslint/js':
-    specifier: ^9.1.1
-    version: 9.1.1
-  '@vitejs/plugin-vue':
-    specifier: ^5.0.4
-    version: 5.0.4(vite@5.2.10)(vue@3.4.25)
-  cz-git:
-    specifier: ^1.9.1
-    version: 1.9.1
-  eslint:
-    specifier: ^8.57.0
-    version: 8.57.0
-  eslint-plugin-vue:
-    specifier: ^9.25.0
-    version: 9.25.0(eslint@8.57.0)
-  globals:
-    specifier: ^15.1.0
-    version: 15.1.0
-  husky:
-    specifier: ^9.0.11
-    version: 9.0.11
-  lint-staged:
-    specifier: ^15.2.2
-    version: 15.2.2
-  prettier:
-    specifier: 3.2.5
-    version: 3.2.5
-  typescript:
-    specifier: ^5.2.2
-    version: 5.4.5
-  typescript-eslint:
-    specifier: ^7.8.0
-    version: 7.8.0(eslint@8.57.0)(typescript@5.4.5)
-  unplugin-auto-import:
-    specifier: ^0.17.5
-    version: 0.17.5
-  vite:
-    specifier: ^5.2.0
-    version: 5.2.10
-  vue-tsc:
-    specifier: ^2.0.6
-    version: 2.0.14(typescript@5.4.5)
+  form-generator: {}
+
+  form-website: {}
 
 packages:
   /@antfu/utils@0.7.7:

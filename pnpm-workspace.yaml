@@ -1,4 +1,4 @@
 packages:
-  - 'form-generator/*'
-  - 'form-server/*'
-  - 'form-website/*'
+  - 'form-generator/**'
+  - 'form-server/**'
+  - 'form-website/**'

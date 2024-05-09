@@ -11,6 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@e-form/form-generator": "workspace:^",
     "vue": "^3.4.25"
   },
   "devDependencies": {
