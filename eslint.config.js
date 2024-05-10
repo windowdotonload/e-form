@@ -2,7 +2,7 @@ import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
-
+import ignores from './eslint.ignores.js'
 export default [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
@@ -13,4 +13,5 @@ export default [
       'no-var': 'error',
     },
   },
+  ignores,
 ]
