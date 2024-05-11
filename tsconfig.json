@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["vite/client"],
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -21,12 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "packages/**/*.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.vue",
-    "types/",
-    "vite.config.ts",
-  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
