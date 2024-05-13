@@ -1,13 +1,9 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
+import { UserConfig, defineConfig, mergeConfig } from 'vite'
+import { options } from './build/vite.rollup.options'
+import baseConfig from './build/vite.config.base'
 
-export default defineConfig({
-  plugins: [
-    vue(),
-    AutoImport({
-      imports: ['vue', 'vue-router', 'vuex'],
-      dts: 'types/auto-imports.d.ts',
-    }),
-  ],
+export default defineConfig(async () => {
+  const pkg = await import('./package.json')
+  const dependencies = Object.keys(pkg.dependencies)
+  return mergeConfig(baseConfig, options({ dependencies }) as UserConfig)
 })

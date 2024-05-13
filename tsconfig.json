@@ -20,5 +20,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "include": [
+    "build/**/*.ts",
+    "form-generator/**/*.ts",
+    "form-website/**/*.ts",
+    "form-server/**/*.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
